@@ -1,0 +1,288 @@
+ 
+ html{
+   font-size: 62.5%;
+ }
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Muli", sans-serif;
+}
+
+
+.navbar{
+  background-color: #fff !important;
+}
+
+.navbar-brand {
+  font-size: 3rem !important;
+  color: #565387 !important;
+}
+
+.navbar-brand strong {
+  margin-left: -5rem;
+  color: #e71324 !important;
+  font-weight: 700 !important;
+}
+
+.navbar-brand strong:hover{
+  color: #3498db !important;
+}
+
+.navbar a {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.navbar a:hover {
+  color: #3498db !important;
+}
+
+.menu_active{
+  font-weight: bold;
+  border-bottom: 0.1rem solid #565387;
+}
+
+
+/*================== home page css ====================*/
+
+#header{
+  width: 100%;
+  height: 60vh;
+  margin-top: 10rem;
+}
+
+#header h3{
+  margin:  7rem 0 0rem 0;
+  font-size: 2.8rem;
+  color: black;
+  margin-top: 18px;
+}
+
+
+#header h5{
+  color : #484848;
+  font-size: 2.4rem;
+}
+
+#header .btn-primary{
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  padding: 1.0rem 3.0rem;
+  border-radius: 5.0rem;
+  transition: 1s;
+  border: 0.2rem solid #3498db;
+  text-decoration: none;
+}
+
+#header .btn-primary:hover{
+  background: #3498db;
+  color: #fff;
+}
+
+.img-fluid{
+  margin-left: 15rem;
+  margin-top: -3rem;
+  
+}
+
+.header-img {
+  text-align: right;
+}
+
+#header .animated
+{
+  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down{
+  0% {
+      transform: translateY(0.1rem);
+  }
+  100% {
+      transform: translateY(-0.1rem);
+  }
+}
+
+@keyframes up-down{
+  0% {
+      transform: translateY(1rem);
+  }
+  100% {
+      transform: translateY(0.1rem);
+  }
+}
+
+#brand-id{
+  margin-left: 4rem;
+}
+
+/* ============== About Page ======================= */
+
+h3{
+  margin: 0 20rem 20rem 20rem;
+  display: block;
+  color: #652b7c;
+  text-align: justify;
+  text-decoration: none;
+  padding-top: 5rem;
+}
+
+
+
+/* ============= Footer ======================= */
+ .foot p{
+  margin: 0rem;
+  padding:1.2rem;
+}
+
+.foot{
+  height: 5rem;
+  background-color: black;
+  color: white ;
+  text-align: center;
+  font-size: small;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/*======================== Responsive Home Page Code ========================*/
+
+@media (max-width: 991px ){
+  #header {
+    height: 60vh;
+    text-align: center;
+  }
+  #header .header-img{
+    text-align: left;
+  }
+  #header .header-img img {
+    width: 50%;
+  }
+
+  html{
+    font-size: 55%;
+  }
+
+}
+
+@media (max-width : 768px){
+  #header {
+    margin-top: 2.0rem;
+  }
+  
+  #header h1 {
+    font-size: 2.8rem;
+  }
+
+  #header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 3.0rem;
+  }
+
+  #header .header-img img {
+    width: 70%;
+  }
+
+  html{
+    font-size: 45%;
+  }
+
+}
+
+/*====================Login Form CSS ======================*/
+
+.styleForm {
+  height: 25rem;
+  width: 30rem;
+  background-color:#3c6066;
+  text-align: center;
+  margin-left: 50rem;
+  margin-top: 10rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  color:black;
+}
+
+
+.styleForm label{
+  margin-left: 1.6rem;
+  font-size: 1.5rem;
+}
+
+.styleForm input[type=text]{
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -5rem;
+  margin-top: 5.4rem;
+  height: 2.2rem;
+  width: 18rem;
+  font-size: 1.5rem;
+}
+
+.styleForm input[type=password]{
+  margin-top: 5rem;
+  border:1px solid #ccc;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-left: -7.8rem;
+  height: 2.2rem;
+  width: 18rem;
+  font-size: 1.5rem;
+}
+
+.styleForm button{
+  width: 12rem;
+  height: 3rem;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  border-radius: 1.2rem;
+  background-color: white;
+  border: 0.2rem solid black;
+}
+
+button:hover {
+  background-color: #1d42122a;
+  color: white;
+}
+
+/*=====================Login Form====================*/
+
+@media (max-width : 1000px){
+
+  .styleForm {
+    height: 25rem;
+    width: 30rem;
+    text-align: center;
+    margin-left: 10rem;
+    margin-top: 20rem;
+    padding: 1rem;
+  
+  }
+}
+
+/*==================CContact Form ==========================*/
+
+.myForm{
+  font-size: 15px;
+}
+.text-center{
+  color: purple;
+  font-family: inherit;
+  font-weight: bold;
+} 
+
+
+
+
